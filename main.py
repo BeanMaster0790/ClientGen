@@ -1,24 +1,20 @@
 import obs
 import time
 import os
+import browserControl
 
+browser = browserControl.StartBrowser("FireFox")
 
-ws = obs._auth()
+browser.fullscreen_window()
+browserControl.GoToUrl(browser, "https://www.youtube.com/trending")
 
+obsws = obs.connect()
 
-obs.SetScene(ws, "AutoScene")
+print(obs.GetHotKeyNames(obsws))
 
-print(os.getcwd())
+obs.SetScene(obsws, "AutoScene")
+obs.TriggerHotKey(obsws, "MediaSource.Restart")
 
-obs.GetHotKeyNames(ws)
+obs.StartRecording(obsws)
 
-obs.SetOutputPath(ws, os.getcwd() + "\Videos")
-
-obs.TriggerHotKey(ws, "MediaSource.Restart")
-
-obs.StartRecording(ws)
-
-time.sleep(10)
-
-obs.StopRecording(ws)
-
+browserControl.HumanLikeScroll(browser, 4000, scrollAmount=(50,125), pauseRange=(1,5), chanceToPause = 1, chanceToGoUp = 0.3)

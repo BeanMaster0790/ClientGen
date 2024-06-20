@@ -10,7 +10,7 @@ LOG = logging.getLogger(__name__)
 
 host = "localhost"
 port = 4455 #or whatever port you use
-password = "RtNI7G5Uwb5aAuku"
+password = "DmC1ToAE6fsFRMPw"
 
 id = 1
 
@@ -32,7 +32,7 @@ def _build_auth_string(salt, challenge):
 
 
 
-def _auth():
+def connect():
 
     try:
         ws.connect(url)
