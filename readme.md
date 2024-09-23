@@ -1,7 +1,10 @@
+<p>THIS PROJECT IS DISCONTINUED: </p>
+<p>The people i was making this for no longer want it but it was a good test of my pyhon abilities which defeneitly need work.</p>
+
 <h1>v0.1</h1>
 
 <p>Basic proof of consept. It opens the youtube trending page and scrolls through that in a somewhat human like way whilst a video plays in the corner.
-Uses obs for video recording as coding my own methord would take a long ass time, A long as time i dont have.</p>
+Uses obs for video recording as making my own recording thing would take a long time, A long time i dont have.</p>
 
 If All goes well next steps are probably:
 
@@ -9,7 +12,6 @@ If All goes well next steps are probably:
   <li>be able to look through urls in a csv and film a video scrolling through the home page.</li>
   <li>start scrolling through more than just a websites home page</li>
   <li>some way to easily change the settings of the obs websockets instead of having them hard written</li>
-  <li>find a way to scrape links and bring them into a csv.</li>
 </ul>
 
 
